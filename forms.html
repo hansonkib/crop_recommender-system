@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">
+           <!-- add crop modal -->
+<form action="add_crop.php" method="POST">
+    <div class="modal fade centro" role="dialog" tabindex="-1" id="CropModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title txtsGrises">Add new crop</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <h2 class="titulos">Crop details: </h2>
+                    <p class="text-left margenesEspacio">Please enter crop details in the form below. </p>
+                    <div class="col padMar">
+                        <!-- input field for crop name -->
+                        <div class="form-group text-primary">
+                            <label for="name">Crop name</label>
+                            <span class="required-input">*</span>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-name">
+                                        <i class="fa-envelop-o"></i>
+                                    </span>
+                                    <input type="text" class="form-control"
+                                     id="name" name="CropName" required=""
+                                    placeholder="Crop name">
+                                </div>
+                            </div>
+                        </div>
+                            <!-- input field for temperature -->
+                            <div class="form-group text-primary">
+                                <label for="temperature">temperature</label>
+                                <span class="required-input">*</span>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-number">
+                                            <i class="fa"></i>
+                                        </span>
+                                        <input type="number" class="form-control" id="temperature" name="temperature" required=""
+                                        placeholder="temperature">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- input field for rainfall -->
+                            <div class="form-group text-primary"><label for="rainfall">Rainfall</label>
+                                <span class="required-input">*</span>
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">
+                                        <i class="fa fa-envelop-o"></i></span></div>
+                                        <input class="form-control" 
+                                        type="text" id="rainfall" name="rainfall" required="" 
+                                        placeholder="rainfall"></div>
+                            </div>
+                            <!-- input field for crop photo -->
+                            <div class="form-group text-primary"><label for="photo">Crop image</label>
+                                <span class="required-input">*</span>
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-file">
+                                        <i class="fa fa-envelop-o"></i></span></div>
+                                        <input class="form-control" 
+                                        type="file" id="photo" name="photo" required="" 
+                                        placeholder="Upload crop image"></div>
+                            </div>
+                            <!-- input field for crop description -->
+                            <div class="form-group text-primary"><label for="description">Description</label>
+                                <span class="required-input">*</span>
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">
+                                        <i class="fa fa-envelop-o"></i></span></div>
+                                        <input class="form-control" 
+                                        type="text" id="description" name=description required="" 
+                                        placeholder="Describe crop"></div>
+                            </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" role="button" name="submit" type="submit">NEW CROP </button></div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+        <!-- add region modal -->
+<form action="add_region.php" method="post">
+    <div class="modal fade centro" role="dialog" tabindex="-1" id="RegionModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title txtsGrises">Add new region</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <h2 class="titulos">Region details: </h2>
+                    <p class="text-left margenesEspacio">Please enter Region details in the form below. </p>
+                    <div class="col padMar">
+                       <!-- input field for region name -->
+                       <div class="form-group text-primary">
+                        <label for="Region">Region name</label>
+                        <span class="required-input">*</span>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-number">
+                                    <i class="fa"></i>
+                                </span>
+                                <input type="text" class="form-control" id="Region" name="Region" required=""
+                                placeholder="Region name">
+                            </div>
+                        </div>
+                    </div>
+                        <!-- input field for temperature -->
+                        <div class="form-group text-primary">
+                            <label for="temperature">temperature</label>
+                            <span class="required-input">*</span>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-number">
+                                        <i class="fa"></i>
+                                    </span>
+                                    <input type="number" class="form-control" id="temperature" name="temperature" required=""
+                                    placeholder="temperature">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- input field for rainfall -->
+                        <div class="form-group text-primary"><label for="rainfall">Rainfall</label>
+                            <span class="required-input">*</span>
+                            <div class="input-group">
+                                <div class="input-group-prepend"><span class="input-group-text">
+                                    <i class="fa fa-envelop-o"></i></span></div>
+                                    <input class="form-control" 
+                                    type="text" id="rainfall" name="rainfall" required="" 
+                                    placeholder="rainfall"></div>
+                        </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary" name="submit" type="submit">NEW REGION</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+</body>
+
+</html>

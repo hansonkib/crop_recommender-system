@@ -1,0 +1,53 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.typeahead, .tt-query, .tt-hint {
+  padding: 8px 12px;
+  border: 2px solid #ccc;
+  outline: none;
+}
+
+.typeahead:focus {
+  border: 2px solid #0097cf;
+}
+
+.tt-suggestion {
+  color: white;
+  margin: 0;
+  padding: 8px;
+  font-size: 11px;
+  white-space: nowrap !important;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.tt-suggestion small {
+  display: block;
+  margin: 2px 0;
+  color: #999;
+}
+
+.tt-cursor {
+  background: blue;
+}
+
+.tt-menu {
+  background: linear-gradient(#313131, #131313);
+  color: white;
+}
+
+.empty-typeahead-message {
+  padding: 15px;
+  color: white;
+}
+
+label {
+  display: block;
+  padding: 0.25rem;
+}
+
+body > div, h1 {
+  padding: 1rem;
+}
+

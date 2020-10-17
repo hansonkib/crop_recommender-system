@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>home page</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/best-carousel-slide.css">
+    <link rel="stylesheet" href="assets/css/Footer-with-social-media-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Dark-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md bg-primary navigation-clean">
+        <div class="container"><a class="navbar-brand" href="#">CROP RECOMMENDER SYSTEM</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="crop_lists.php">Crops</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="regions.html">Regions</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="check crop.html">Climate</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown </a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item"
+                         role="presentation" href="#">Crops</a><a class="dropdown-item"
+                          role="presentation" href="#">Regions</a><a class="dropdown-item" 
+                          role="presentation" href="#">Climate</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="carousel">
+        <div class="carousel slide" data-ride="carousel" id="carousel-1">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item">
+                    <div class="jumbotron pulse animated hero-nature carousel-hero">
+                        <h1 class="hero-title text-warning">CROP RECOMMENDER SYSTEM</h1>
+                        <p class="hero-subtitle text-info">This is the platform hich can help you as a farmer to make the right decision
+                            on the type of the crop to plant in your region.</p>
+                            <button class="btn btn-primary hero-button plat" type="button" 
+                            data-toggle="modal" data-target="#modalCrop">START</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="jumbotron pulse animated hero-photography carousel-hero">
+                        <h1 class="hero-title text-white">CROP RECOMMENDER SYSTEM</h1>
+                        <p class="hero-subtitle text-warning">This is the platform hich can help you as a farmer to make the right decision
+                            on the type of the crop to plant in your region.</p>
+                            <button class="btn btn-primary hero-button plat"
+                             type="button" data-toggle="modal" data-target="#modalCrop">START</button>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="jumbotron pulse animated hero-technology carousel-hero">
+                        <h1 class="hero-title text-danger">CROP RECOMMENDER SYSTEM</h1>
+                        <p class="hero-subtitle text-success">This is the platform hich can help you as a farmer to make the right decision
+                             on the type of the crop to plant in your region.
+                        </p>
+                        <button class="btn btn-primary hero-button plat" type="button" 
+                        data-toggle="modal" data-target="#modalCrop">START</button>
+                        
+                </div>
+                </div>
+            </div>
+            <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next"><i class="fa fa-chevron-right"></i><span class="sr-only">Next</span></a></div>
+            <ol
+                class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+                <li data-target="#carousel-1" data-slide-to="2" class="active"></li>
+                </ol>
+        </div>
+    </section>
+    <footer id="footerpad" class="bg-success">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-6 col-lg-8 mx-auto"><p class="text-white copyright text-bold text-center">Copyright &copy; Crop Recomender | Web Design by SANG HANSON KIBET</p></div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <div>
+        <div role="dialog" tabindex="-5" class="modal fade" id="modalCrop">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title text-success text-success"><i class="fa fa-crop"></i>
+                             CROP RECOMMENDER SYSTEM</h3><button type="button" class="close" 
+                            data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col padMar margenesCajas">
+                                <p class="text-primary text-bold text-center p-0 m-0 p-2">Input your Regions details.</p>
+                            </div>
+                        </div>
+                        <!-- ------------------- -->
+<form method="POST" action="crop_lists.php">
+    <!-- region input starts here -->
+    <div class="form-group text-bold text-info"><label for="region">Select Region</label>
+        <div class="input-group">
+            <div class="input-group-prepend"><span class="input-group-text">
+                <i class="fa fa-location-arrow"></i>
+            </span></div><select class="form-control" id="region"  
+            name="user_type">
+                <optgroup label="Your Region">
+                    <option value="client" selected="">Bungoma</option>
+                    <option value="supplier">Bomet</option>
+                </optgroup></select></div>
+            </div>
+            <!-- region inputs ends here -->
+    <div class="form-group">
+        <label for="rainfall" class="text-bold text-info">Enter rainfall values in mm</label>
+        <input class="bg-light border rounded border-secondary shadow-sm form-control d-table" 
+        type="number" data-toggle="tooltip" data-bs-tooltip=""
+         data-placement="right" name="rainfall" id="rainfall"
+         placeholder="rainfall" title="Enter rainfall values">
+        </div>
+        <!-- == -->
+        <div
+        class="form-group">
+        <label for="temperature" class="text-bold text-info">Enter temperature values in F</label>
+        <input class="form-control is-invalid" type="number" id="temperature"
+        name="temperature" placeholder="temperature"><small class="form-text text-danger">
+            Please enter a corrrect format for temperature.</small></div>
+            <div class="form-group"><button class="btn btn-success btn-block"
+                 type="submit">SEARCH FOR RECOMMENDED CROPS&nbsp;</button></div>
+</form>
+                        <!-- --------------------------- -->
+                        <script src="assets/js/jquery.min.js"></script>
+                        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+                        <script src="assets/js/bs-init.js"></script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
+    <script src="assets/js/CDNJS-Search-Final.js"></script>
+</body>
+
+</html>

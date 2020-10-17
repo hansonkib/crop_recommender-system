@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/CDRReporteCuotas.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <?php
+require 'forms.html';
+    ?>
+    <div style="padding: 22px;">
+        <section>
+            <h2 class="text-left" style="padding: 14px;">WEB SCRAPPING (data scrapped from <a href="#">www.kenyameterologicaldept</a>)</h2>
+            <hr>
+            <div>
+                <h3 style="font-size: 20px;">data will be updated automatically on&nbsp; daily basis</h3>
+            </div>
+            <div style="height: 48px;"><label style="height: 30px;">From :&nbsp;</label>
+                <input type="date" style="height: 30px;width: 155px;"><label style="margin: 0px 50px 0px;width: 0px;height: 30px;">To:&nbsp;</label><input type="date" style="width: 155px;margin: 0px;padding: 0px 0px 0px px;">
+               
+                    <button
+                    class="btn btn-primary" type="button" style="margin: 0px 80px;" data-toggle="modal" data-target="#CropModal">Add new Crop</button>
+                    <button
+                    class="btn btn-primary" type="button" style="margin: 0px 80px;" data-toggle="modal" data-target="#RegionModal">Add new region</button>
+            </div>
+            <div>
+                <hr>
+                <h3 style="font-size: 22px;">region climatic conditions updates</h3>
+            </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="text-center">
+                        <tr class="text-center">
+                            <th>id</th>
+                            <th>region</th>
+                            <th>rainfall(mm)</th>
+                            <th>Temperature(C)</th>
+                            <th style="width: 90px;">date updated</th>
+                            <th>Month</th>
+                            <th>year</th>
+                            <th>aggregate rainfall (mm)</th>
+                            <th>aggregate temperature (C)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center">
+                            <td>11111111-1</td>
+                            <td>Nombre1</td>
+                            <td>ApellidoP1</td>
+                            <td>ApellidoM1</td>
+                            <td>01/11/1111<br></td>
+                            <td>$11111</td>
+                            <td>111111111</td>
+                            <td>11111@gmail.com</td>
+                            <td>Habilitado</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>22222222-2</td>
+                            <td>Nombre2</td>
+                            <td>ApellidoP2</td>
+                            <td>ApellidoM2</td>
+                            <td>02/02/2222<br></td>
+                            <td>$22222</td>
+                            <td>222222222</td>
+                            <td>22222@gmail.com</td>
+                            <td>Habilitado</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>33333333-3</td>
+                            <td>Nombre3<br></td>
+                            <td>ApellidoP3</td>
+                            <td>ApellidoM3</td>
+                            <td>03/03/3333<br></td>
+                            <td>$33333</td>
+                            <td>333333333</td>
+                            <td>33333@gmail.com</td>
+                            <td>Deshabilitado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
